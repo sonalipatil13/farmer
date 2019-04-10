@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Fresh Fruits</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="jquery.wm-zoom-1.0.min.css">
+
+
+
+</head>
+<body>
+ <div class="wm-zoom-container demo">
+  <div class="wm-zoom-box">
+  <img id="image" src="products/apple_hd.jpeg" class="wm-zoom-default-img"
+       data-hight-src="products/apple_hd.jpeg" 
+       data-loader-src="loader.gif">
+  </div>
+  <div class="aboutp">
+      <span>About</span> <br>
+      The bright red coloured and heart shaped Washington apples are crunchy, juicy and slightly sweet. Washington Apples are a natural source of fibre and are fat free. They contain a wide variety of anti-oxidants and polynutrients. The calories of Washington Apple is 95. Premium apples are handpicked by our experts to give you the best quality apples.
+  </div>
+</div>
+   
+   
+  
+    <div class="product_des">
+        <h1>Fresho Apple - Washington, 4 pcs </h1>
+        <form>
+<h2>Sizes</h2>
+  <input type="radio" name="size" value="2kg" checked> 4 pcs - Rs 109.00<br>
+  <input type="radio" name="size" value="1kg"> 2x4 pcs ( Multipack ) - Rs 218.00<br>
+  <input type="radio" name="size" value="5kg"> 6 pcs - Rs 183.20<br>
+  <span> Free delivery</span><br>
+  <span>Cash on Delivery Eligible.</span><br>
+  <span> MRP:109</span><br>
+            <button class="button"><a href="#">add to cart</a></button>
+</form> 
+    </div>
+    
+     <script src="jquery-1.8.3.min.js"></script>
+     
+     <script src="jquery.wm-zoom-1.0.min.js"></script>
+     
+     <script type="text/javascript">
+         $('.demo').WMZoom();
+         $('.demo-2').WMZoom({
+  config : {
+
+    // stage size
+  stageW : 500,
+  stageH : 400,
+
+  // set to true to enable the inner zoom mode
+  inner  : false,
+
+  // [top, right, bottom, left]
+  position : 'right', 
+
+  // margin
+  margin : 10
+    
+  }
+});
+    </script>
+      
+</body>
+</html>
